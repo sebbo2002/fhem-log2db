@@ -1,9 +1,19 @@
 #!/usr/bin/env node
 'use strict';
 
-/* istanbul ignore file */
+import fhemLog2Db from '../lib';
 
-import Magic from '../lib';
+const m = require.main;
+if(!m) {
+    console.log('Unable to run: ');
+    process.exit(1);
+}
 
-const number = parseInt(process.argv[process.argv.length - 1], 10);
-console.log(Magic.double(number));
+const i = process.argv.indexOf(m.filename);
+const args = process.argv.splice(i + 1);
+const cmd = args.shift();
+
+fhemLog2Db(cmd, args).catch(error => {
+    console.log(error);
+    process.exit(1);
+});

@@ -13,7 +13,12 @@ jobs:
     if: contains(toJson(github.event.commits.*.message), '[skip ci]') == false || github.ref == 'refs/heads/main'
     strategy:
       matrix:
-        node: [12.x, 14.x, 16.x]
+        node: [14.x, 16.x]
+    services:
+      database:
+        image: mariadb:10
+        ports:
+          - 3306:3306
     steps:
       - name: ☁️ Checkout Project
         uses: actions/checkout@v2
@@ -31,6 +36,11 @@ jobs:
     name: Code Coverage / Lint
     runs-on: ubuntu-latest
     if: contains(toJson(github.event.commits.*.message), '[skip ci]') == false || github.ref == 'refs/heads/main'
+    services:
+      database:
+        image: mariadb:10
+        ports:
+          - 3306:3306
     steps:
       - name: ☁️ Checkout Project
         uses: actions/checkout@v2
@@ -159,6 +169,11 @@ jobs:
       - license-checker
       - docker-image
     if: ${{ github.repository != 'sebbo2002/js-template' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop') }}
+    services:
+      database:
+        image: mariadb:10
+        ports:
+          - 3306:3306
     steps:
       - name: ☁️ Checkout Project
         uses: actions/checkout@v2

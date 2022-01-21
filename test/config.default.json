@@ -1,0 +1,5 @@
+{
+  "path": "./dummies/",
+  "database": "mysql://root@localhost/fhem",
+  "period": 5184000
+}
