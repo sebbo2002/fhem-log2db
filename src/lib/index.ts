@@ -7,10 +7,6 @@ import cleanCommand from '../commands/clean';
 import helpCommand from '../commands/help';
 
 export default async function fhemLog2Db (cmd: string | undefined, args: string[]) {
-    if(cmd === 'install-path') {
-        console.log(config.scriptPath);
-        return;
-    }
     if(cmd === 'setup') {
         await setupCommand();
         return;

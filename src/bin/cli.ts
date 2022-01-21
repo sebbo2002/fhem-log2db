@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
-import fhemLog2Db from '../lib';
+import config from '../lib/config';
 
 const m = require.main;
 if(!m) {
@@ -13,7 +13,13 @@ const i = process.argv.indexOf(m.filename);
 const args = process.argv.splice(i + 1);
 const cmd = args.shift();
 
-fhemLog2Db(cmd, args).catch(error => {
-    console.log(error);
-    process.exit(1);
-});
+if(cmd === 'install-path') {
+    console.log(config.scriptPath);
+} else {
+    import('../lib')
+        .then(fhemLog2Db => fhemLog2Db.default(cmd, args))
+        .catch(error => {
+            console.log(error);
+            process.exit(1);
+        });
+}
