@@ -1,8 +1,6 @@
 import config from '../lib/config';
 import { getClient } from '../prisma';
-import runFileWalker  from '../lib/filewalker';
-import { parseLine } from '../lib/line-parser';
-import Task, { createTask } from '../lib/task';
+import { createTask } from '../lib/task';
 
 export default async function cleanCommand() {
     const prisma = getClient();

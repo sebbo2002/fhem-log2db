@@ -25,7 +25,7 @@ rm -rf ./docs/coverage/ ./docs/reference/ ./docs/tests/
 npx typedoc
 
 # Test Report in ./docs/tests
-npx mocha --reporter mochawesome
+FHEM_LOG2DB_CONFIG=./test/config.default.json npx mocha --reporter mochawesome
 mv -f ./mochawesome-report/mochawesome.html ./mochawesome-report/index.html
 mv -f ./mochawesome-report ./docs/tests
 

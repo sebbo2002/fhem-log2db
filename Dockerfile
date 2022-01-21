@@ -26,4 +26,4 @@ COPY --from=build-container "/app" "/app"
 USER node
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["/usr/local/bin/start"]
+CMD ["/usr/local/bin/cli"]
