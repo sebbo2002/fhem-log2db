@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-21T09:23:30.043Z",
+    "end": "2022-01-21T09:23:30.889Z",
+    "duration": 846,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0d639e6c-6159-4116-aaf7-60674fa2d1a5",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e9395389-6e0e-47df-81f6-cb8bfd4d0aa3",
+          "title": "fhem-log2db",
+          "fullFile": "/home/runner/work/fhem-log2db/fhem-log2db/test/lib/index.ts",
+          "file": "/test/lib/index.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "config",
+              "fullTitle": "fhem-log2db config",
+              "timedOut": false,
+              "duration": 83,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('config', []);\n});",
+              "err": {},
+              "uuid": "a5fa005c-b828-40f9-8f89-d982307c6fa0",
+              "parentUUID": "e9395389-6e0e-47df-81f6-cb8bfd4d0aa3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "sync",
+              "fullTitle": "fhem-log2db sync",
+              "timedOut": false,
+              "duration": 364,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('sync', []);\n});",
+              "err": {},
+              "uuid": "35a00c50-85c7-4d49-ac37-9b4d29901854",
+              "parentUUID": "e9395389-6e0e-47df-81f6-cb8bfd4d0aa3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "clean",
+              "fullTitle": "fhem-log2db clean",
+              "timedOut": false,
+              "duration": 124,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('clean', []);\n});",
+              "err": {},
+              "uuid": "5b0cab25-406f-4b78-ab5a-c0d56ac9179c",
+              "parentUUID": "e9395389-6e0e-47df-81f6-cb8bfd4d0aa3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "cron",
+              "fullTitle": "fhem-log2db cron",
+              "timedOut": false,
+              "duration": 190,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('cron', []);\n});",
+              "err": {},
+              "uuid": "bc7c5785-4415-4a78-aab8-07f9319b60e3",
+              "parentUUID": "e9395389-6e0e-47df-81f6-cb8bfd4d0aa3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "default",
+              "fullTitle": "fhem-log2db default",
+              "timedOut": false,
+              "duration": 78,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('-', []);\n});",
+              "err": {},
+              "uuid": "20da55b2-0d05-4808-b41a-cf0697b15c9a",
+              "parentUUID": "e9395389-6e0e-47df-81f6-cb8bfd4d0aa3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a5fa005c-b828-40f9-8f89-d982307c6fa0",
+            "35a00c50-85c7-4d49-ac37-9b4d29901854",
+            "5b0cab25-406f-4b78-ab5a-c0d56ac9179c",
+            "bc7c5785-4415-4a78-aab8-07f9319b60e3",
+            "20da55b2-0d05-4808-b41a-cf0697b15c9a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 839,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "author": "Sebastian Pekarek <mail@sebbo.net>",
+  "bin": {
+    "fhemlog2db": "./dist/bin/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/sebbo2002/fhem-log2db/issues"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.6.0",
+    "extract-zip": "^2.0.1",
+    "prompts": "^2.4.2",
+    "targz": "^1.0.1",
+    "tempy": "^2.0.0"
+  },
+  "description": "Small CLI tool that parses FHEM log entries and pushes entries into a database.",
+  "devDependencies": {
+    "@amanda-mitchell/semantic-release-npm-multiple": "^2.15.0",
+    "@qiwi/semantic-release-gh-pages-plugin": "^5.2.0",
+    "@sebbo2002/semantic-release-docker": "^1.0.0-develop.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/exec": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.10",
+    "@types/prompts": "^2.0.14",
+    "@types/targz": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-plugin-jsonc": "^2.0.0",
+    "license-checker": "^25.0.1",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1",
+    "nyc": "^15.1.0",
+    "prisma": "^3.6.0",
+    "semantic-release-license": "^1.0.3",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.4.0",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "/dist",
+    "/src/prisma/schema.prisma",
+    "/src/prisma/migrations"
+  ],
+  "homepage": "https://github.com/sebbo2002/fhem-log2db#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@sebbo2002/fhem-log2db",
+  "prisma": {
+    "schema": "./src/prisma/schema.prisma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebbo2002/fhem-log2db.git"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x ./dist/bin/*.js",
+    "build-all": "./.github/workflows/build.sh",
+    "coverage": "FHEM_LOG2DB_CONFIG=./test/config.default.json nyc mocha",
+    "develop": "ts-node ./src/bin/cli.ts",
+    "license-check": "license-checker --production --summary",
+    "lint": "eslint . --ext .ts,.json",
+    "start": "node ./dist/bin/start.js",
+    "test": "FHEM_LOG2DB_CONFIG=./test/config.default.json mocha",
+    "update-schema": "prisma generate"
+  },
+  "version": "1.0.0"
+}
