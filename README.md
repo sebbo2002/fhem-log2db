@@ -12,14 +12,15 @@ This script can open zip and tar.gz archives to handle backups and archived logs
 
 	npm i -g @sebbo2002/fhem-log2db
 
-    # @todo Perform database migrations
-    fhem-log2db install-path
+    cd $(fhemlog2db install-path)
     DATABASE=mysql://root@localhost/fhem npx prisma migrate deploy
 
 
 ## ⚡️ Quick Start
 
     fhem-log2db sync
+    fhem-log2db clean
+    fhem-log2db cron [-v]
 
 
 ## 🙆🏼‍♂️ Copyright and license
