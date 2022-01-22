@@ -5,8 +5,16 @@ import prisma, { connect } from '../prisma';
 import syncCommand from '../commands/sync';
 import cleanCommand from '../commands/clean';
 import helpCommand from '../commands/help';
+import Task, { TaskMessageLevel } from './task';
 
 export default async function fhemLog2Db (cmd: string | undefined, args: string[]) {
+    if(args.includes('-v')) {
+        Task.setLevel(TaskMessageLevel.Debug);
+    }
+    else if(cmd === 'cron') {
+        Task.setLevel(TaskMessageLevel.Error);
+    }
+
     if(cmd === 'setup') {
         await setupCommand();
         return;

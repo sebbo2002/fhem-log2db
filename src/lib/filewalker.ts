@@ -93,7 +93,7 @@ class FileWalkerQueue {
         this.running++;
         task().finally(() => {
             this.running--;
-            setTimeout(() => this.check(), 0);
+            this.check();
         });
     }
 
