@@ -9,8 +9,7 @@ if(!m) {
     process.exit(1);
 }
 
-const i = process.argv.indexOf(m.filename);
-const args = process.argv.splice(i + 1);
+const args = process.argv.splice(2);
 const cmd = args.shift();
 
 if(cmd === 'install-path') {
