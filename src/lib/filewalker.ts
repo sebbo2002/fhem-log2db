@@ -161,6 +161,12 @@ async function onLogFile (baton: FileWalkerBaton): Promise<void> {
     let lineNr = 0;
     rl.on('line', (line: string) => {
         const myLine = lineNr;
+
+        // Skip lines added after imports starts
+        if (myLine > lines) {
+            return;
+        }
+
         onLine(Object.assign({}, baton, {
             externalPath: baton.externalPath + ':' + ++lineNr
         }), line, counter, task, baton.options.callback).then(() => {
