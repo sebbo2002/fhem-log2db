@@ -32,6 +32,7 @@ export default class Task {
 
     private readonly name: string;
     private readonly messages: TaskMessage[] = [];
+    private lastProgress: number | undefined;
     private statusLength = 0;
     private pending = true;
 
@@ -94,7 +95,8 @@ export default class Task {
     }
 
     progress(progress: number) {
-        if (this.pending && Task.level === TaskMessageLevel.Log) {
+        if (this.pending && Task.level === TaskMessageLevel.Log && (!this.lastProgress || progress > this.lastProgress)) {
+            this.lastProgress = progress;
             this.status(`${this.name}… (${(progress * 100).toFixed(1)}%)`);
         }
     }
