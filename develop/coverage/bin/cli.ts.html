@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
@@ -76,7 +76,12 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -89,16 +94,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">#!/usr/bin/env node
 'use strict';
 &nbsp;
-import fhemLog2Db from '../lib';
+import config from '../lib/config';
 &nbsp;
 const m = <span class="cstat-no" title="statement not covered" >require.main;</span>
 <span class="cstat-no" title="statement not covered" >if(!m) {</span>
@@ -106,14 +116,19 @@ const m = <span class="cstat-no" title="statement not covered" >require.main;</s
 <span class="cstat-no" title="statement not covered" >    process.exit(1);</span>
 }
 &nbsp;
-const i = <span class="cstat-no" title="statement not covered" >process.argv.indexOf(m.filename);</span>
-const args = <span class="cstat-no" title="statement not covered" >process.argv.splice(i + 1);</span>
+const args = <span class="cstat-no" title="statement not covered" >process.argv.splice(2);</span>
 const cmd = <span class="cstat-no" title="statement not covered" >args.shift();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >fhemLog2Db(cmd, args).catch(<span class="fstat-no" title="function not covered" >er</span>ror =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    console.log(error);</span>
-<span class="cstat-no" title="statement not covered" >    process.exit(1);</span>
-});
+<span class="cstat-no" title="statement not covered" >if(cmd === 'install-path') {</span>
+<span class="cstat-no" title="statement not covered" >    console.log(config.scriptPath);</span>
+} else {
+<span class="cstat-no" title="statement not covered" >    import('../lib')</span>
+        .then(<span class="fstat-no" title="function not covered" >fh</span>emLog2Db =&gt; <span class="cstat-no" title="statement not covered" >fhemLog2Db.default(cmd, args))</span>
+        .catch(<span class="fstat-no" title="function not covered" >er</span>ror =&gt; {
+<span class="cstat-no" title="statement not covered" >            console.log(error);</span>
+<span class="cstat-no" title="statement not covered" >            process.exit(1);</span>
+        });
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -121,7 +136,7 @@ const cmd = <span class="cstat-no" title="statement not covered" >args.shift();<
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Jan 21 2022 09:23:37 GMT+0000 (Coordinated Universal Time)
+                at Tue Jan 25 2022 10:09:17 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">89.91% </span>
+                <span class="strong">86.36% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>98/109</span>
+                <span class='fraction'>95/110</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.13% </span>
+                <span class="strong">73.53% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>25/32</span>
+                <span class='fraction'>25/34</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90.24% </span>
+                <span class="strong">85% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>37/41</span>
+                <span class='fraction'>34/40</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">89.9% </span>
+                <span class="strong">87.13% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>89/99</span>
+                <span class='fraction'>88/101</span>
             </div>
         
             
@@ -304,7 +304,13 @@
 <a name='L245'></a><a href='#L245'>245</a>
 <a name='L246'></a><a href='#L246'>246</a>
 <a name='L247'></a><a href='#L247'>247</a>
-<a name='L248'></a><a href='#L248'>248</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a>
+<a name='L252'></a><a href='#L252'>252</a>
+<a name='L253'></a><a href='#L253'>253</a>
+<a name='L254'></a><a href='#L254'>254</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -405,11 +411,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -467,6 +473,12 @@
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">394x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">394x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">394x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -646,17 +658,17 @@ class FileWalkerQueue {
         this.running++;
         task().finally(() =&gt; {
             this.running--;
-            setTimeout(() =&gt; this.check(), 0);
+            this.check();
         });
     }
 &nbsp;
     public empty (): Promise&lt;void&gt; {
-        if(this.queue.length === 0) {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(this.queue.length === 0) {
             return Promise.resolve();
         }
 &nbsp;
-        return new Promise(cb =&gt; {
-            this.events.once('empty', () =&gt; cb());
+<span class="cstat-no" title="statement not covered" >        return new Promise(<span class="fstat-no" title="function not covered" >cb </span>=&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            this.events.once('empty', <span class="fstat-no" title="function not covered" >() =</span>&gt; <span class="cstat-no" title="statement not covered" >cb())</span>;</span>
         });
     }
 }
@@ -714,6 +726,12 @@ async function onLogFile (baton: FileWalkerBaton): Promise&lt;void&gt; {
     let lineNr = 0;
     rl.on('line', (line: string) =&gt; {
         const myLine = lineNr;
+&nbsp;
+        // Skip lines added after imports starts
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (myLine &gt; lines) {
+<span class="cstat-no" title="statement not covered" >            return;</span>
+        }
+&nbsp;
         onLine(Object.assign({}, baton, {
             externalPath: baton.externalPath + ':' + ++lineNr
         }), line, counter, task, baton.options.callback).then(() =&gt; {
@@ -805,7 +823,7 @@ export default async function runFileWalker (options: FileWalkerOptions) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Jan 21 2022 09:23:37 GMT+0000 (Coordinated Universal Time)
+                at Tue Jan 25 2022 10:09:17 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../prettify.js"></script>
