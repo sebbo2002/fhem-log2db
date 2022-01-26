@@ -1,3 +1,10 @@
+# [1.0.0-develop.3](https://github.com/sebbo2002/fhem-log2db/compare/v1.0.0-develop.2...v1.0.0-develop.3) (2022-01-26)
+
+
+### Bug Fixes
+
+* **Line Parser:** Fix value/unit parsing ([9138d21](https://github.com/sebbo2002/fhem-log2db/commit/9138d2137d793983bc72732899a44237e951e51a))
+
 # [1.0.0-develop.2](https://github.com/sebbo2002/fhem-log2db/compare/v1.0.0-develop.1...v1.0.0-develop.2) (2022-01-25)
 
 
