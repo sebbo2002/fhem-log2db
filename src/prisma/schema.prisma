@@ -1,0 +1,27 @@
+datasource db {
+    provider = "mysql"
+    url      = env("DATABASE")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model history {
+    timestamp   DateTime
+    device      String
+    event       String
+    reading     String
+    value       String?
+    unit        String?
+    syncedAt    DateTime    @default(now())
+
+    @@id([timestamp, device, reading])
+}
+
+model execution {
+    id          String      @id @default(uuid())
+    type        String
+    started     DateTime    @default(now())
+    completed   DateTime?
+}
