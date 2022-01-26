@@ -32,15 +32,15 @@ export function parseLine (line: string): ParsedLine | null {
     const eventParts = event.split(':');
     const reading = eventParts.shift() || '';
 
-    const rawValue = eventParts.join(':');
+    const rawValue = eventParts.join(':').trim();
     let value = rawValue || null;
     let unit = null;
 
     if(value !== null) {
-        const number = parseFloat(value);
-        if(!isNaN(number)) {
-            value = number.toString();
-            unit = rawValue.replace(String(number), '').trim() || null;
+        const match = value.match(/^([\d.]+)[\s]?([^\s\d]{1,10})$/);
+        if(match !== null) {
+            value = match[1];
+            unit = match[2];
         }
     }
 
