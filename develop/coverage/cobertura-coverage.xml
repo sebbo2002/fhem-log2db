@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="381" lines-covered="286" line-rate="0.7506999999999999" branches-valid="176" branches-covered="111" branch-rate="0.6307" timestamp="1643105357037" complexity="0" version="0.1">
+<coverage lines-valid="381" lines-covered="286" line-rate="0.7506999999999999" branches-valid="174" branches-covered="109" branch-rate="0.6264" timestamp="1643229015104" complexity="0" version="0.1">
   <sources>
     <source>/home/runner/work/fhem-log2db/fhem-log2db</source>
   </sources>
@@ -269,7 +269,7 @@
         </class>
       </classes>
     </package>
-    <package name="lib" line-rate="0.8233" branch-rate="0.6818000000000001">
+    <package name="lib" line-rate="0.8233" branch-rate="0.6769">
       <classes>
         <class name="config.ts" filename="src/lib/config.ts" line-rate="0.7273000000000001" branch-rate="0.5238">
           <methods>
@@ -745,44 +745,44 @@
             <line number="60" hits="1" branch="false"/>
           </lines>
         </class>
-        <class name="line-parser.ts" filename="src/lib/line-parser.ts" line-rate="0.9167000000000001" branch-rate="0.75">
+        <class name="line-parser.ts" filename="src/lib/line-parser.ts" line-rate="0.9167000000000001" branch-rate="0.7273000000000001">
           <methods>
-            <method name="checkForStringLength" hits="1940" signature="()V">
+            <method name="checkForStringLength" hits="1955" signature="()V">
               <lines>
-                <line number="10" hits="1940"/>
+                <line number="10" hits="1955"/>
               </lines>
             </method>
-            <method name="parseLine" hits="394" signature="()V">
+            <method name="parseLine" hits="397" signature="()V">
               <lines>
-                <line number="18" hits="394"/>
+                <line number="18" hits="397"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="1940" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="11" hits="1955" branch="true" condition-coverage="75% (3/4)"/>
             <line number="12" hits="0" branch="false"/>
-            <line number="15" hits="1940" branch="false"/>
+            <line number="15" hits="1955" branch="false"/>
             <line number="18" hits="1" branch="false"/>
-            <line number="19" hits="394" branch="false"/>
-            <line number="20" hits="394" branch="true" condition-coverage="75% (3/4)"/>
-            <line number="21" hits="394" branch="false"/>
-            <line number="22" hits="394" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="19" hits="397" branch="false"/>
+            <line number="20" hits="397" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="21" hits="397" branch="false"/>
+            <line number="22" hits="397" branch="true" condition-coverage="75% (3/4)"/>
             <line number="23" hits="0" branch="false"/>
-            <line number="26" hits="394" branch="false"/>
-            <line number="27" hits="394" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="26" hits="397" branch="false"/>
+            <line number="27" hits="397" branch="true" condition-coverage="100% (2/2)"/>
             <line number="28" hits="6" branch="false"/>
-            <line number="31" hits="388" branch="false"/>
-            <line number="32" hits="388" branch="false"/>
-            <line number="33" hits="388" branch="true" condition-coverage="50% (1/2)"/>
-            <line number="35" hits="388" branch="false"/>
-            <line number="36" hits="388" branch="true" condition-coverage="50% (1/2)"/>
-            <line number="37" hits="388" branch="false"/>
-            <line number="39" hits="388" branch="true" condition-coverage="50% (1/2)"/>
-            <line number="40" hits="388" branch="false"/>
-            <line number="41" hits="388" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="42" hits="328" branch="false"/>
-            <line number="43" hits="328" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="47" hits="388" branch="false"/>
+            <line number="31" hits="391" branch="false"/>
+            <line number="32" hits="391" branch="false"/>
+            <line number="33" hits="391" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="35" hits="391" branch="false"/>
+            <line number="36" hits="391" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="37" hits="391" branch="false"/>
+            <line number="39" hits="391" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="40" hits="391" branch="false"/>
+            <line number="41" hits="391" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="42" hits="1" branch="false"/>
+            <line number="43" hits="1" branch="false"/>
+            <line number="47" hits="391" branch="false"/>
           </lines>
         </class>
         <class name="task.ts" filename="src/lib/task.ts" line-rate="0.7593000000000001" branch-rate="0.6286">
