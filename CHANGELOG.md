@@ -1,3 +1,15 @@
+# [1.0.0-develop.2](https://github.com/sebbo2002/fhem-log2db/compare/v1.0.0-develop.1...v1.0.0-develop.2) (2022-01-25)
+
+
+### Bug Fixes
+
+* **Dockerfile:** Don't remove src folder (required for running the migrations) ([737c6ab](https://github.com/sebbo2002/fhem-log2db/commit/737c6ab0d570b8a1a5e08f692a11aaea087515cf))
+* Move install-path command in cli.ts ([9703d35](https://github.com/sebbo2002/fhem-log2db/commit/9703d35b62d21174a4d09f935dfc8329a29cd58c))
+* Parse cli args correctly ([1ddf0cd](https://github.com/sebbo2002/fhem-log2db/commit/1ddf0cd6c5cc728cf3246a009035882bfc15d5a9))
+* Set task log level ([b382669](https://github.com/sebbo2002/fhem-log2db/commit/b382669bd3e6cfd0d8a52669ac03b32a042a095f))
+* Skip lines added after the import process started ([a2a1a69](https://github.com/sebbo2002/fhem-log2db/commit/a2a1a69a9d473678aa972df412d12a6ad5f3bc99))
+* **Task:** Prevent progress indicator from flickering ([fca581d](https://github.com/sebbo2002/fhem-log2db/commit/fca581d71c1a716cf158c9e1769b1da8ceee7804))
+
 # 1.0.0-develop.1 (2022-01-21)
 
 
