@@ -1,0 +1,253 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-27T08:30:27.142Z",
+    "end": "2022-01-27T08:30:27.908Z",
+    "duration": 766,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6451df38-db31-4916-a759-489572a941f9",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef7d877e-dc3d-4d2b-9653-84304d2b9af9",
+          "title": "fhem-log2db",
+          "fullFile": "/home/runner/work/fhem-log2db/fhem-log2db/test/lib/index.ts",
+          "file": "/test/lib/index.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "config",
+              "fullTitle": "fhem-log2db config",
+              "timedOut": false,
+              "duration": 79,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('config', []);\n});",
+              "err": {},
+              "uuid": "ad93bdb3-146e-4a80-a5c9-5a0745902719",
+              "parentUUID": "ef7d877e-dc3d-4d2b-9653-84304d2b9af9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "sync",
+              "fullTitle": "fhem-log2db sync",
+              "timedOut": false,
+              "duration": 318,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('sync', []);\n});",
+              "err": {},
+              "uuid": "b08b0b54-9315-4b99-b09c-6561b7520b23",
+              "parentUUID": "ef7d877e-dc3d-4d2b-9653-84304d2b9af9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "clean",
+              "fullTitle": "fhem-log2db clean",
+              "timedOut": false,
+              "duration": 114,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('clean', []);\n});",
+              "err": {},
+              "uuid": "1e45beb2-1d99-4f44-9346-e6ee896526ec",
+              "parentUUID": "ef7d877e-dc3d-4d2b-9653-84304d2b9af9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "cron",
+              "fullTitle": "fhem-log2db cron",
+              "timedOut": false,
+              "duration": 151,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('cron', []);\n});",
+              "err": {},
+              "uuid": "bf2c5600-dcc4-4b88-9bb6-4817517bd148",
+              "parentUUID": "ef7d877e-dc3d-4d2b-9653-84304d2b9af9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "default",
+              "fullTitle": "fhem-log2db default",
+              "timedOut": false,
+              "duration": 77,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield (0, lib_1.default)('-', []);\n});",
+              "err": {},
+              "uuid": "0a2c5166-c202-423c-a630-9fd8fb6c959d",
+              "parentUUID": "ef7d877e-dc3d-4d2b-9653-84304d2b9af9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ad93bdb3-146e-4a80-a5c9-5a0745902719",
+            "b08b0b54-9315-4b99-b09c-6561b7520b23",
+            "1e45beb2-1d99-4f44-9346-e6ee896526ec",
+            "bf2c5600-dcc4-4b88-9bb6-4817517bd148",
+            "0a2c5166-c202-423c-a630-9fd8fb6c959d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 739,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "f2ff1915-472b-4218-af9f-b2a1844538a5",
+          "title": "parseLine",
+          "fullFile": "/home/runner/work/fhem-log2db/fhem-log2db/test/lib/line-parser.ts",
+          "file": "/test/lib/line-parser.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should work",
+              "fullTitle": "parseLine should work",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    const l = (0, line_parser_1.parseLine)('2022-01-01_02:30:41 ZWave_SENSOR_MULTILEVEL_3 battery: 100');\n    assert.deepStrictEqual(l, {\n        timestamp: new Date('2022-01-01T02:30:41'),\n        device: 'ZWave_SENSOR_MULTILEVEL_3',\n        event: 'battery: 100',\n        reading: 'battery',\n        value: '100',\n        unit: null\n    });\n});",
+              "err": {},
+              "uuid": "eda82127-3c80-4f74-b00c-6af2b3ab1def",
+              "parentUUID": "f2ff1915-472b-4218-af9f-b2a1844538a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should handle float units",
+              "fullTitle": "parseLine should handle float units",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    const l = (0, line_parser_1.parseLine)('2022-01-01_02:30:41 ZWave_SENSOR_MULTILEVEL_3 battery: 100.0 %');\n    assert.deepStrictEqual(l, {\n        timestamp: new Date('2022-01-01T02:30:41'),\n        device: 'ZWave_SENSOR_MULTILEVEL_3',\n        event: 'battery: 100.0 %',\n        reading: 'battery',\n        value: '100.0',\n        unit: '%'\n    });\n});",
+              "err": {},
+              "uuid": "c35a4f35-4ad9-4038-9b9a-6b1718a9023e",
+              "parentUUID": "f2ff1915-472b-4218-af9f-b2a1844538a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should handle timestamps",
+              "fullTitle": "parseLine should handle timestamps",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    const l = (0, line_parser_1.parseLine)('2022-01-01_02:30:41 ZWave_SENSOR_MULTILEVEL_3 time: 2022-1-23 16:29:1');\n    assert.deepStrictEqual(l, {\n        timestamp: new Date('2022-01-01T02:30:41'),\n        device: 'ZWave_SENSOR_MULTILEVEL_3',\n        event: 'time: 2022-1-23 16:29:1',\n        reading: 'time',\n        value: '2022-1-23 16:29:1',\n        unit: null\n    });\n});",
+              "err": {},
+              "uuid": "e5e4952d-e4e6-46c1-ab13-af062f151dc1",
+              "parentUUID": "f2ff1915-472b-4218-af9f-b2a1844538a5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eda82127-3c80-4f74-b00c-6af2b3ab1def",
+            "c35a4f35-4ad9-4038-9b9a-6b1718a9023e",
+            "e5e4952d-e4e6-46c1-ab13-af062f151dc1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
