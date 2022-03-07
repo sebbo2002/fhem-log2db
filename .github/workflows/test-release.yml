@@ -23,7 +23,7 @@ jobs:
           MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     steps:
       - name: ☁️ Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 🔧 Setup node.js
         uses: actions/setup-node@v3
         with:
@@ -49,7 +49,7 @@ jobs:
           MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     steps:
       - name: ☁️ Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 🔧 Setup node.js
         uses: actions/setup-node@v3
         with:
@@ -69,7 +69,7 @@ jobs:
     if: contains(toJson(github.event.commits.*.message), '[skip ci]') == false || github.ref == 'refs/heads/main'
     steps:
       - name: ☁️ Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 🔧 Setup node.js
         uses: actions/setup-node@v3
         with:
@@ -86,7 +86,7 @@ jobs:
       PUSH_TO_DOCKERHUB: ${{ (github.repository != 'sebbo2002/js-template') && (secrets.DOCKERHUB_TOKEN != null) }}
     steps:
       - name: ☁️ Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 🔧 Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: 🔧 Set up Buildx
@@ -176,7 +176,7 @@ jobs:
           MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     steps:
       - name: ☁️ Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 🔧 Setup node.js
         uses: actions/setup-node@v3
         with:
