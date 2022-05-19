@@ -1,3 +1,10 @@
+# [1.1.0-develop.1](https://github.com/sebbo2002/fhem-log2db/compare/v1.0.3-develop.4...v1.1.0-develop.1) (2022-05-19)
+
+
+### Features
+
+* Lock sync/clean process when another job is running ([fda2ed8](https://github.com/sebbo2002/fhem-log2db/commit/fda2ed89a9cca22d50c4ec756a4da96485cc3a4d))
+
 ## [1.0.3-develop.4](https://github.com/sebbo2002/fhem-log2db/compare/v1.0.3-develop.3...v1.0.3-develop.4) (2022-05-14)
 
 ## [1.0.3-develop.3](https://github.com/sebbo2002/fhem-log2db/compare/v1.0.3-develop.2...v1.0.3-develop.3) (2022-05-06)
