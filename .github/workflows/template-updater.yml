@@ -8,11 +8,9 @@ jobs:
   TemplateUpdater:
     runs-on: ubuntu-latest
     if: ${{ github.repository != 'sebbo2002/js-template' }}
-    permissions:
-      contents: write
-      pull-requests: write
+    permissions: write-all
     steps:
-      - name: 🤖 is-semantic-release
+      - name: 🤖 template-updater
         uses: sebbo2002/action-template-updater@develop
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
