@@ -1,3 +1,10 @@
+# [1.1.0-develop.2](https://github.com/sebbo2002/fhem-log2db/compare/v1.1.0-develop.1...v1.1.0-develop.2) (2022-05-20)
+
+
+### Reverts
+
+* Revert "ci: Remove GH_TOKEN and use GITHUB_TOKEN" ([b5c2eb6](https://github.com/sebbo2002/fhem-log2db/commit/b5c2eb66170b38bda1e49ad5bb5cf02bd13eb8e4))
+
 # [1.1.0-develop.1](https://github.com/sebbo2002/fhem-log2db/compare/v1.0.3-develop.4...v1.1.0-develop.1) (2022-05-19)
 
 
