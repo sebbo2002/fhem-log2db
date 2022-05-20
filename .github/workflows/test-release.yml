@@ -13,7 +13,14 @@ jobs:
     if: contains(toJson(github.event.commits.*.message), '[skip ci]') == false || github.ref == 'refs/heads/main'
     strategy:
       matrix:
-        node: [12.x, 14.x, 16.x]
+        node: [14.x, 16.x]
+    services:
+      database:
+        image: mariadb:10
+        ports:
+          - 127.0.0.1:3306:3306
+        env:
+          MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     steps:
       - name: ☁️ Checkout Project
         uses: actions/checkout@v3
@@ -24,6 +31,8 @@ jobs:
           cache: 'npm'
       - name: 📦 Install dependencies
         run: npm ci
+      - name: 🪄 Run migrations
+        run: npx prisma migrate deploy
       - name: ⏳ Run tests
         run: npm run test
 
@@ -31,6 +40,13 @@ jobs:
     name: Code Coverage / Lint
     runs-on: ubuntu-latest
     if: contains(toJson(github.event.commits.*.message), '[skip ci]') == false || github.ref == 'refs/heads/main'
+    services:
+      database:
+        image: mariadb:10
+        ports:
+          - 127.0.0.1:3306:3306
+        env:
+          MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     steps:
       - name: ☁️ Checkout Project
         uses: actions/checkout@v3
@@ -40,6 +56,8 @@ jobs:
           cache: 'npm'
       - name: 📦 Install dependencies
         run: npm ci
+      - name: 🪄 Run migrations
+        run: npx prisma migrate deploy
       - name: 🔍 Run linter
         run: npm run lint
       - name: ⚙️ Build project
@@ -244,17 +262,6 @@ jobs:
         env:
           SOURCE: ghcr.io/${{ github.repository }}:${{ github.sha }}
           TARGET: ${{ github.repository }}:${{ github.sha }}
-      - name: 🏁 Boot-up Check
-        if: github.repository != 'sebbo2002/js-template'
-        run: |
-          docker run --name "app" -d $IMAGE
-          sleep 5
-          docker logs app
-          docker exec app echo "Ok."
-          docker stop app
-          docker rm app
-        env:
-          IMAGE: ghcr.io/${{ github.repository }}:${{ github.sha }}
     outputs:
       digest: ${{ steps.docker-build-2.outputs.digest }}
 
@@ -270,6 +277,13 @@ jobs:
       - license-checker
       - docker-image
     if: ${{ github.repository != 'sebbo2002/js-template' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop') }}
+    services:
+      database:
+        image: mariadb:10
+        ports:
+          - 127.0.0.1:3306:3306
+        env:
+          MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     steps:
       - name: ☁️ Checkout Project
         uses: actions/checkout@v3
@@ -279,6 +293,8 @@ jobs:
           cache: 'npm'
       - name: 📦 Install dependencies
         run: npm ci
+      - name: 🪄 Run migrations
+        run: npx prisma migrate deploy
       - name: 📂 Create docs folder
         run: mkdir ./docs
       - name: 🔐 Login to GitHub Container Registry
