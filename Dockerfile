@@ -7,7 +7,7 @@ RUN npm ci
 
 COPY . "/app/"
 RUN npm run build && \
-    rm -rf ./.github ./src ./test ./node_modules
+    rm -rf ./.github ./test ./node_modules
 
 
 FROM node:lts-alpine@sha256:1a9a71ea86aad332aa7740316d4111ee1bd4e890df47d3b5eff3e5bded3b3d10
@@ -26,4 +26,4 @@ COPY --from=build-container "/app" "/app"
 USER node
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["/usr/local/bin/start"]
+CMD ["/usr/local/bin/cli"]
