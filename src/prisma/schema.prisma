@@ -22,6 +22,7 @@ model history {
 model execution {
     id          String      @id @default(uuid())
     type        String
+    pid         Int?
     started     DateTime    @default(now())
     completed   DateTime?
 }

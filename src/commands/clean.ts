@@ -1,6 +1,7 @@
 import config from '../lib/config';
 import { getClient } from '../prisma';
 import { createTask } from '../lib/task';
+import { checkRunningProcesses } from '../lib';
 
 export default async function cleanCommand() {
     const prisma = getClient();
@@ -8,6 +9,7 @@ export default async function cleanCommand() {
         throw new Error('Unable to clean: prisma is not ready');
     }
 
+    await checkRunningProcesses(prisma);
     await createTask('Clean database', async (task) => {
         const periodStart = config.periodStart;
         if(periodStart === null) {
@@ -19,6 +21,7 @@ export default async function cleanCommand() {
         const thisExecution = await prisma.execution.create({
             data: {
                 type: 'clean',
+                pid: process.pid,
                 started: new Date()
             }
         });

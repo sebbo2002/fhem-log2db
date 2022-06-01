@@ -2,10 +2,11 @@ import setupCommand from '../commands/setup';
 import config from './config';
 import configCommand from '../commands/config';
 import prisma, { connect } from '../prisma';
-import syncCommand from '../commands/sync';
+import syncCommand  from '../commands/sync';
 import cleanCommand from '../commands/clean';
 import helpCommand from '../commands/help';
 import Task, { TaskMessageLevel } from './task';
+import { PrismaClient } from '@prisma/client';
 
 export default async function fhemLog2Db (cmd: string | undefined, args: string[]) {
     if(args.includes('-v')) {
@@ -58,5 +59,31 @@ async function fhemLog2DbSyncAndClean (cmd: string | undefined, args: string[]) 
     }
     else {
         await helpCommand();
+    }
+}
+
+export function isRunning(pid: number) {
+    try {
+        return process.kill(pid,0);
+    }
+    catch (e: unknown) {
+        return String(e).includes('EPERM');
+    }
+}
+
+export async function checkRunningProcesses (prisma: PrismaClient) {
+    const runningExecution = await prisma.execution.findFirst({
+        where: {
+            completed: null
+        },
+        orderBy: [{
+            started: 'desc'
+        }]
+    });
+    if(runningExecution && runningExecution.pid && isRunning(runningExecution.pid)) {
+        throw new Error(`There's another ${runningExecution.type} process running, please wait till it's done (${runningExecution.pid}, running since ${runningExecution.started})`);
+    }
+    if(runningExecution && !runningExecution.pid) {
+        throw new Error(`There's another ${runningExecution.type} process running, please wait till it's done (running since ${runningExecution.started})`);
     }
 }

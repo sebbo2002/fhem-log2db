@@ -3,6 +3,7 @@ import { getClient } from '../prisma';
 import runFileWalker  from '../lib/filewalker';
 import { parseLine } from '../lib/line-parser';
 import Task from '../lib/task';
+import { checkRunningProcesses } from '../lib';
 
 async function syncPath(path: string, syncFrom?: Date): Promise<void> {
     await runFileWalker({
@@ -60,9 +61,11 @@ export default async function syncCommand(args: string[] = []) {
         throw new Error('Unable to sync: prisma is not ready');
     }
 
+    await checkRunningProcesses(prisma);
     const thisExecution = await prisma.execution.create({
         data: {
             type: 'sync',
+            pid: process.pid,
             started: new Date()
         }
     });
