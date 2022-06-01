@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/sebbo2002/fhem-log2db/compare/v1.0.2...v1.1.0) (2022-06-01)
+
+
+### Features
+
+* Lock sync/clean process when another job is running ([fda2ed8](https://github.com/sebbo2002/fhem-log2db/commit/fda2ed89a9cca22d50c4ec756a4da96485cc3a4d))
+
+
+### Reverts
+
+* Revert "ci: Remove docker setup" ([655068b](https://github.com/sebbo2002/fhem-log2db/commit/655068b3b9c6139181ae87421db5f8144fae3e18))
+
 # [1.1.0-develop.3](https://github.com/sebbo2002/fhem-log2db/compare/v1.1.0-develop.2...v1.1.0-develop.3) (2022-05-24)
 
 # [1.1.0-develop.2](https://github.com/sebbo2002/fhem-log2db/compare/v1.1.0-develop.1...v1.1.0-develop.2) (2022-05-20)
