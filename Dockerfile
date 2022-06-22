@@ -1,4 +1,4 @@
-FROM node:lts-alpine@sha256:1a9a71ea86aad332aa7740316d4111ee1bd4e890df47d3b5eff3e5bded3b3d10 as build-container
+FROM node:lts-alpine@sha256:c785e617c8d7015190c0d41af52cc69be8a16e3d9eb7cb21f0bb58bcfca14d6b as build-container
 
 WORKDIR "/app"
 
@@ -7,10 +7,10 @@ RUN npm ci
 
 COPY . "/app/"
 RUN npm run build && \
-    rm -rf ./.github ./src ./test ./node_modules
+    rm -rf ./.github ./test ./node_modules
 
 
-FROM node:lts-alpine@sha256:1a9a71ea86aad332aa7740316d4111ee1bd4e890df47d3b5eff3e5bded3b3d10
+FROM node:lts-alpine@sha256:c785e617c8d7015190c0d41af52cc69be8a16e3d9eb7cb21f0bb58bcfca14d6b
 ARG NODE_ENV=production
 ENV NODE_ENV=$NODE_ENV
 WORKDIR "/app"
@@ -26,4 +26,4 @@ COPY --from=build-container "/app" "/app"
 USER node
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["/usr/local/bin/start"]
+CMD ["/usr/local/bin/cli"]
