@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="395" lines-covered="298" line-rate="0.7544" branches-valid="183" branches-covered="113" branch-rate="0.6175" timestamp="1655409158130" complexity="0" version="0.1">
+<coverage lines-valid="395" lines-covered="298" line-rate="0.7544" branches-valid="183" branches-covered="113" branch-rate="0.6175" timestamp="1655928545740" complexity="0" version="0.1">
   <sources>
     <source>/home/runner/work/fhem-log2db/fhem-log2db</source>
   </sources>
@@ -37,9 +37,9 @@
         </class>
       </classes>
     </package>
-    <package name="commands" line-rate="0.6518" branch-rate="0.5263">
+    <package name="commands.file:.home.runner.work.fhem-log2db.fhem-log2db.src.commands" line-rate="0.6518" branch-rate="0.5263">
       <classes>
-        <class name="clean.ts" filename="src/commands/clean.ts" line-rate="0.8332999999999999" branch-rate="0.5">
+        <class name="clean.ts" filename="src/commands/file:/home/runner/work/fhem-log2db/fhem-log2db/src/commands/clean.ts" line-rate="0.8332999999999999" branch-rate="0.5">
           <methods>
             <method name="cleanCommand" hits="2" signature="()V">
               <lines>
@@ -78,7 +78,7 @@
             <line number="37" hits="2" branch="false"/>
           </lines>
         </class>
-        <class name="config.ts" filename="src/commands/config.ts" line-rate="1" branch-rate="1">
+        <class name="config.ts" filename="src/commands/file:/home/runner/work/fhem-log2db/fhem-log2db/src/commands/config.ts" line-rate="1" branch-rate="1">
           <methods>
             <method name="configCommand" hits="1" signature="()V">
               <lines>
@@ -97,7 +97,7 @@
             <line number="9" hits="1" branch="false"/>
           </lines>
         </class>
-        <class name="help.ts" filename="src/commands/help.ts" line-rate="1" branch-rate="1">
+        <class name="help.ts" filename="src/commands/file:/home/runner/work/fhem-log2db/fhem-log2db/src/commands/help.ts" line-rate="1" branch-rate="1">
           <methods>
             <method name="helpCommand" hits="1" signature="()V">
               <lines>
@@ -121,7 +121,7 @@
             <line number="21" hits="1" branch="false"/>
           </lines>
         </class>
-        <class name="setup.ts" filename="src/commands/setup.ts" line-rate="0.1429" branch-rate="0">
+        <class name="setup.ts" filename="src/commands/file:/home/runner/work/fhem-log2db/fhem-log2db/src/commands/setup.ts" line-rate="0.1429" branch-rate="0">
           <methods>
             <method name="setupCommand" hits="0" signature="()V">
               <lines>
@@ -200,7 +200,7 @@
             <line number="66" hits="0" branch="false"/>
           </lines>
         </class>
-        <class name="sync.ts" filename="src/commands/sync.ts" line-rate="0.7333" branch-rate="0.6">
+        <class name="sync.ts" filename="src/commands/file:/home/runner/work/fhem-log2db/fhem-log2db/src/commands/sync.ts" line-rate="0.7333" branch-rate="0.6">
           <methods>
             <method name="syncPath" hits="2" signature="()V">
               <lines>
@@ -273,9 +273,9 @@
         </class>
       </classes>
     </package>
-    <package name="lib" line-rate="0.8223999999999999" branch-rate="0.6618999999999999">
+    <package name="lib.file:.home.runner.work.fhem-log2db.fhem-log2db.src.lib" line-rate="0.8223999999999999" branch-rate="0.6618999999999999">
       <classes>
-        <class name="config.ts" filename="src/lib/config.ts" line-rate="0.7273000000000001" branch-rate="0.5238">
+        <class name="config.ts" filename="src/lib/file:/home/runner/work/fhem-log2db/fhem-log2db/src/lib/config.ts" line-rate="0.7273000000000001" branch-rate="0.5238">
           <methods>
             <method name="(anonymous_7)" hits="1" signature="()V">
               <lines>
@@ -389,7 +389,7 @@
             <line number="106" hits="1" branch="false"/>
           </lines>
         </class>
-        <class name="filewalker.ts" filename="src/lib/filewalker.ts" line-rate="0.8713" branch-rate="0.7353000000000001">
+        <class name="filewalker.ts" filename="src/lib/file:/home/runner/work/fhem-log2db/fhem-log2db/src/lib/filewalker.ts" line-rate="0.8713" branch-rate="0.7353000000000001">
           <methods>
             <method name="(anonymous_8)" hits="10" signature="()V">
               <lines>
@@ -696,7 +696,7 @@
             <line number="247" hits="2" branch="false"/>
           </lines>
         </class>
-        <class name="index.ts" filename="src/lib/index.ts" line-rate="0.8085" branch-rate="0.6667000000000001">
+        <class name="index.ts" filename="src/lib/file:/home/runner/work/fhem-log2db/fhem-log2db/src/lib/index.ts" line-rate="0.8085" branch-rate="0.6667000000000001">
           <methods>
             <method name="fhemLog2Db" hits="5" signature="()V">
               <lines>
@@ -769,7 +769,7 @@
             <line number="87" hits="0" branch="false"/>
           </lines>
         </class>
-        <class name="line-parser.ts" filename="src/lib/line-parser.ts" line-rate="0.9167000000000001" branch-rate="0.7273000000000001">
+        <class name="line-parser.ts" filename="src/lib/file:/home/runner/work/fhem-log2db/fhem-log2db/src/lib/line-parser.ts" line-rate="0.9167000000000001" branch-rate="0.7273000000000001">
           <methods>
             <method name="checkForStringLength" hits="1955" signature="()V">
               <lines>
@@ -809,7 +809,7 @@
             <line number="47" hits="391" branch="false"/>
           </lines>
         </class>
-        <class name="task.ts" filename="src/lib/task.ts" line-rate="0.7593000000000001" branch-rate="0.6286">
+        <class name="task.ts" filename="src/lib/file:/home/runner/work/fhem-log2db/fhem-log2db/src/lib/task.ts" line-rate="0.7593000000000001" branch-rate="0.6286">
           <methods>
             <method name="(anonymous_7)" hits="1" signature="()V">
               <lines>
@@ -946,9 +946,9 @@
         </class>
       </classes>
     </package>
-    <package name="prisma" line-rate="1" branch-rate="0.5">
+    <package name="prisma.file:.home.runner.work.fhem-log2db.fhem-log2db.src.prisma" line-rate="1" branch-rate="0.5">
       <classes>
-        <class name="index.ts" filename="src/prisma/index.ts" line-rate="1" branch-rate="0.5">
+        <class name="index.ts" filename="src/prisma/file:/home/runner/work/fhem-log2db/fhem-log2db/src/prisma/index.ts" line-rate="1" branch-rate="0.5">
           <methods>
             <method name="connect" hits="4" signature="()V">
               <lines>
