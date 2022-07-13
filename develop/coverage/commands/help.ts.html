@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for bin/cli.ts</title>
+    <title>Code coverage report for commands/help.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">bin</a> cli.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">commands</a> help.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -78,58 +78,49 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">#!/usr/bin/env node
-'use strict';
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { readFile } from 'fs/promises';
+import { join } from 'path';
 &nbsp;
-import config from '../lib/config';
+export default async function helpCommand() {
+    console.log('# fhem-log2db');
 &nbsp;
-const m = <span class="cstat-no" title="statement not covered" >require.main;</span>
-<span class="cstat-no" title="statement not covered" >if(!m) {</span>
-<span class="cstat-no" title="statement not covered" >    console.log('Unable to run: ');</span>
-<span class="cstat-no" title="statement not covered" >    process.exit(1);</span>
-}
+    try {
+        const pkg = JSON.parse(await readFile(join(__dirname, '..', '..', 'package.json'), 'utf8'));
+        console.log(`  Version ${pkg.version}`);
+    }
+    catch(error) {
+        // ignore error
+    }
 &nbsp;
-const args = <span class="cstat-no" title="statement not covered" >process.argv.splice(2);</span>
-const cmd = <span class="cstat-no" title="statement not covered" >args.shift();</span>
+    console.log('');
 &nbsp;
-<span class="cstat-no" title="statement not covered" >if(cmd === 'install-path') {</span>
-<span class="cstat-no" title="statement not covered" >    console.log(config.scriptPath);</span>
-} else {
-<span class="cstat-no" title="statement not covered" >    import('../lib')</span>
-        .then(<span class="fstat-no" title="function not covered" >fh</span>emLog2Db =&gt; <span class="cstat-no" title="statement not covered" >fhemLog2Db.default(cmd, args))</span>
-        .catch(<span class="fstat-no" title="function not covered" >er</span>ror =&gt; {
-<span class="cstat-no" title="statement not covered" >            console.log(error);</span>
-<span class="cstat-no" title="statement not covered" >            process.exit(1);</span>
-        });
-}
-&nbsp;</pre></td></tr></table></pre>
+    console.log('&gt; fhemlog2db setup  →  Re-run setup script to write ~/fhem-log2db.config.json');
+    console.log('&gt; fhemlog2db config →  Print current configuration');
+    console.log('&gt; fhemlog2db sync   →  Sync files in default path to database');
+    console.log('&gt; fhemlog2db clean  →  Delete old values in database');
+    console.log('&gt; fhemlog2db cron   →  Run both sync and clean jobs');
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
