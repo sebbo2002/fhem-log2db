@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
-import config from '../lib/config';
+import config from '../lib/config.js';
 
 const m = require.main;
 if(!m) {

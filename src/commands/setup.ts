@@ -1,6 +1,6 @@
 import prompts from 'prompts';
-import config from '../lib/config';
-import { createTask } from '../lib/task';
+import config from '../lib/config.js';
+import { createTask } from '../lib/task.js';
 
 export default async function setupCommand() {
     const { defaultPath, database } = await prompts([

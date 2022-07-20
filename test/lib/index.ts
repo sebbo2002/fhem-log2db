@@ -1,7 +1,7 @@
 'use strict';
 
 import assert from 'assert';
-import fhemLog2Db, { isRunning } from '../../src/lib';
+import fhemLog2Db, { isRunning } from '../../src/lib/index.js';
 
 describe('fhem-log2db', function () {
     this.timeout(30000);

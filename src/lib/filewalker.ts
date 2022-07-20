@@ -1,13 +1,14 @@
 import { lstat, mkdtemp, readdir, rm } from 'fs/promises';
-import { Dirent, Stats } from 'node:fs';
+import { createReadStream, Dirent, Stats } from 'node:fs';
 import { join, extname } from 'path';
 import { createInterface, Interface } from 'readline';
-import { createReadStream } from 'fs';
 import extractZip from 'extract-zip';
-import { decompress as extractTarGz } from 'targz';
+import targz from 'targz';
 import { tmpdir } from 'os';
-import Task from './task';
+import Task from './task.js';
 import EventEmitter from 'events';
+
+const { decompress: extractTarGz } = targz;
 
 
 export interface FileWalkerOptions {

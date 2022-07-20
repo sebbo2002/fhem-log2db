@@ -1,7 +1,7 @@
 'use strict';
 
-import { parseLine } from '../../src/lib/line-parser';
-import assert = require('assert');
+import { parseLine } from '../../src/lib/line-parser.js';
+import assert from 'assert';
 
 describe('parseLine', function () {
     it('should work', async function () {
