@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="963" lines-covered="739" line-rate="0.7673000000000001" branches-valid="157" branches-covered="109" branch-rate="0.6942" timestamp="1666724153034" complexity="0" version="0.1">
+<coverage lines-valid="963" lines-covered="739" line-rate="0.7673000000000001" branches-valid="157" branches-covered="109" branch-rate="0.6942" timestamp="1667421968095" complexity="0" version="0.1">
   <sources>
     <source>/home/runner/work/fhem-log2db/fhem-log2db</source>
   </sources>
