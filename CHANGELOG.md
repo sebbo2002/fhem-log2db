@@ -1,3 +1,5 @@
+# [2.0.0-develop.12](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.11...v2.0.0-develop.12) (2022-11-06)
+
 # [2.0.0-develop.11](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.10...v2.0.0-develop.11) (2022-11-02)
 
 # [2.0.0-develop.10](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.9...v2.0.0-develop.10) (2022-10-25)
