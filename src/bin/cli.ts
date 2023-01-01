@@ -1,9 +1,24 @@
 #!/usr/bin/env node
 'use strict';
 
-/* istanbul ignore file */
+import config from '../lib/config.js';
 
-import Magic from '../lib/index.js';
+const m = require.main;
+if(!m) {
+    console.log('Unable to run: ');
+    process.exit(1);
+}
 
-const number = parseInt(process.argv[process.argv.length - 1], 10);
-console.log(Magic.double(number));
+const args = process.argv.splice(2);
+const cmd = args.shift();
+
+if(cmd === 'install-path') {
+    console.log(config.scriptPath);
+} else {
+    import('../lib')
+        .then(fhemLog2Db => fhemLog2Db.default(cmd, args))
+        .catch(error => {
+            console.log(error);
+            process.exit(1);
+        });
+}
