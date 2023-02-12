@@ -15,7 +15,7 @@ const cmd = args.shift();
 if(cmd === 'install-path') {
     console.log(config.scriptPath);
 } else {
-    import('../lib')
+    import('../lib/index.js')
         .then(fhemLog2Db => fhemLog2Db.default(cmd, args))
         .catch(error => {
             console.log(error);
