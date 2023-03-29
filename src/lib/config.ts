@@ -37,9 +37,7 @@ export class Config {
     }
 
     get scriptPath(): string {
-        const __filename = fileURLToPath(import.meta.url);
-        const __dirname = dirname(__filename);
-        return resolve(__dirname, '..', '..');
+        return resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
     }
 
     get configFilePath(): string {
