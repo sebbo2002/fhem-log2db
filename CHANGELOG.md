@@ -1,3 +1,24 @@
+# [2.0.0](https://github.com/sebbo2002/fhem-log2db/compare/v1.1.2...v2.0.0) (2023-03-31)
+
+
+### Bug Fixes
+
+* Fix lib import path ([d6fd100](https://github.com/sebbo2002/fhem-log2db/commit/d6fd1009d8fc0c99be2c171c5f2800b6f582f7de))
+* Fix prisma lib issue ([72da523](https://github.com/sebbo2002/fhem-log2db/commit/72da5236bb294ebdb1c8c64f1dde5a95032530b9))
+* Remove `require.main` call in cli ([a7bbb91](https://github.com/sebbo2002/fhem-log2db/commit/a7bbb91578cc1f58dc8667498323265b9a59877c))
+
+
+### Build System
+
+* Deprecate node.js 12 ([426588b](https://github.com/sebbo2002/fhem-log2db/commit/426588b4bb7bde2924bbc92006ca839e960872e1))
+* Native ESM support ([7b86a4f](https://github.com/sebbo2002/fhem-log2db/commit/7b86a4f1187c387a3a5792e1fb72d822b04e3631))
+
+
+### BREAKING CHANGES
+
+* From now on, only node.js ^14.8.0 || >=16.0.0 are supported
+* Only Support for node.js ^12.20.0 || >=14.13.1
+
 # [2.0.0-develop.22](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.21...v2.0.0-develop.22) (2023-03-31)
 
 
