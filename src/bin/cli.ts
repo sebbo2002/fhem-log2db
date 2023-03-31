@@ -3,12 +3,6 @@
 
 import config from '../lib/config.js';
 
-const m = require.main;
-if(!m) {
-    console.log('Unable to run: ');
-    process.exit(1);
-}
-
 const args = process.argv.splice(2);
 const cmd = args.shift();
 
