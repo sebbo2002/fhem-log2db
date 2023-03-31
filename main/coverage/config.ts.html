@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for lib/config.ts</title>
+    <title>Code coverage report for config.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">lib</a> config.ts</h1>
+        <h1><a href="index.html">All files</a> config.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">72.73% </span>
+                <span class="strong">80.37% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>24/33</span>
+                <span class='fraction'>86/107</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">52.38% </span>
+                <span class="strong">61.11% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>11/21</span>
+                <span class='fraction'>11/18</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">72.73% </span>
+                <span class="strong">80.37% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>24/33</span>
+                <span class='fraction'>86/107</span>
             </div>
         
             
@@ -54,8 +54,14 @@
         <p class="quiet">
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -163,117 +169,120 @@
 <a name='L104'></a><a href='#L104'>104</a>
 <a name='L105'></a><a href='#L105'>105</a>
 <a name='L106'></a><a href='#L106'>106</a>
-<a name='L107'></a><a href='#L107'>107</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { existsSync, readFileSync } from 'fs';
 import { writeFile} from 'fs/promises';
 import { join, resolve, dirname } from 'path';
-import { validateDatabaseUri } from '../prisma';
+import { validateDatabaseUri } from '../prisma/index.js';
 import { cwd } from 'process';
+import { fileURLToPath } from 'url';
 &nbsp;
 export interface ConfigSchema {
     path?: string;
@@ -287,27 +296,27 @@ export class Config {
 &nbsp;
     constructor () {
         let configPath: string | undefined;
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (process.env.FHEM_LOG2DB_CONFIG) {
+        if (process.env.FHEM_LOG2DB_CONFIG) {
             configPath = process.env.FHEM_LOG2DB_CONFIG;
         }
-        else <span class="cstat-no" title="statement not covered" >if (process.env.HOME) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >        else if (process.env.HOME) {</span></span>
 <span class="cstat-no" title="statement not covered" >            configPath = join(process.env.HOME, 'fhem-log2db.config.json');</span>
-        }
-        else {
+<span class="cstat-no" title="statement not covered" >        }</span>
+<span class="cstat-no" title="statement not covered" >        else {</span>
 <span class="cstat-no" title="statement not covered" >            throw new Error(</span>
-                'Unable to load configuration: HOME environment variable is not set. Please set HOME or use '+
-                'FHEM_LOG2DB_CONFIG to set the path to the configuration file.'
-            );
-        }
+<span class="cstat-no" title="statement not covered" >                'Unable to load configuration: HOME environment variable is not set. Please set HOME or use '+</span>
+<span class="cstat-no" title="statement not covered" >                'FHEM_LOG2DB_CONFIG to set the path to the configuration file.'</span>
+<span class="cstat-no" title="statement not covered" >            );</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
 &nbsp;
         this.configPath = resolve(cwd(), configPath);
-        <span class="missing-if-branch" title="else path not taken" >E</span>if(existsSync(configPath)) {
+        if(existsSync(configPath)) {
             this.configData = JSON.parse(readFileSync(this.configPath, 'utf8'));
         }
     }
 &nbsp;
     get scriptPath(): string {
-        return resolve(__dirname, '..', '..');
+        return resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
     }
 &nbsp;
     get configFilePath(): string {
@@ -316,32 +325,32 @@ export class Config {
 &nbsp;
     get defaultPath(): string {
         return this.configData.path ?
-            resolve(dirname(this.configFilePath), this.configData.path) :
-<span class="branch-1 cbranch-no" title="branch not covered" >            '/opt/fhem/log';</span>
+            resolve(dirname(this.configFilePath), this.configData.path) <span class="branch-0 cbranch-no" title="branch not covered" >:</span>
+            '/opt/fhem/log';
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    set d</span>efaultPath(path: string) {
+<span class="fstat-no" title="function not covered" >    set defaultPath(path: string) {</span>
 <span class="cstat-no" title="statement not covered" >        this.configData.path = path;</span>
-    }
+<span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
     get database(): string {
-        return this.configData.database || <span class="branch-1 cbranch-no" title="branch not covered" >'mysql://root@localhost';</span>
+        return this.configData.database<span class="branch-0 cbranch-no" title="branch not covered" > || 'mysql://root@localhost';</span>
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    set d</span>atabase(uri: string) {
+<span class="fstat-no" title="function not covered" >    set database(uri: string) {</span>
 <span class="cstat-no" title="statement not covered" >        this.configData.database = uri;</span>
-    }
+<span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
     get period(): number {
-        return this.configData.period || <span class="branch-1 cbranch-no" title="branch not covered" >60 * 60 * 24 * 30;</span>
+        return this.configData.period<span class="branch-0 cbranch-no" title="branch not covered" > || 60 * 60 * 24 * 30;</span>
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    set p</span>eriod(period: number) {
+<span class="fstat-no" title="function not covered" >    set period(period: number) {</span>
 <span class="cstat-no" title="statement not covered" >        this.configData.period = period;</span>
-    }
+<span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
     get periodStart(): Date | null {
-        return this.period &gt; 0 ? new Date(new Date().getTime() - this.period * 1000) : <span class="branch-1 cbranch-no" title="branch not covered" >null;</span>
+        return this.period &gt; 0 ? new Date(new Date().getTime() - this.period * 1000) <span class="branch-0 cbranch-no" title="branch not covered" >: null;</span>
     }
 &nbsp;
     async isValid(): Promise&lt;void&gt; {
@@ -353,9 +362,9 @@ export class Config {
     }
 &nbsp;
     async isValidDefaultPath(defaultPath: string = this.defaultPath): Promise&lt;void&gt; {
-        <span class="missing-if-branch" title="if path not taken" >I</span>if(!existsSync(defaultPath)) {
+        if(!existsSync(defaultPath)) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >            throw new Error(`Logfile path ${defaultPath} does not exist.`);</span>
-        }
+<span class="cstat-no" title="statement not covered" >        }</span>
     }
 &nbsp;
     async isValidDatabase(database: string = this.database): Promise&lt;void&gt; {
@@ -363,14 +372,14 @@ export class Config {
     }
 &nbsp;
     async isValidPeriod(period: number = this.period): Promise&lt;void&gt; {
-        <span class="missing-if-branch" title="if path not taken" >I</span>if(period &lt; 0) {
+        if(period &lt; 0) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >            throw new Error('Period must be a positive number or 0 if everything has to be synced.');</span>
-        }
+<span class="cstat-no" title="statement not covered" >        }</span>
     }
 &nbsp;
-    async <span class="fstat-no" title="function not covered" >save(</span>) {
+    async <span class="fstat-no" title="function not covered" >save() {</span>
 <span class="cstat-no" title="statement not covered" >        await writeFile(this.configPath, JSON.stringify(this.configData, null, '  '));</span>
-    }
+<span class="cstat-no" title="statement not covered" >    }</span>
 }
 &nbsp;
 const config = new Config;
@@ -381,18 +390,17 @@ export default config;
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
-                <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Jul 16 2022 17:00:30 GMT+0000 (Coordinated Universal Time)
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2023-03-31T17:37:04.977Z
             </div>
-        </div>
-        <script src="../prettify.js"></script>
+        <script src="prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="sorter.js"></script>
+        <script src="block-navigation.js"></script>
     </body>
 </html>
     
