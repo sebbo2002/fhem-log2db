@@ -1,3 +1,10 @@
+# [2.0.0-develop.22](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.21...v2.0.0-develop.22) (2023-03-31)
+
+
+### Bug Fixes
+
+* Remove `require.main` call in cli ([a7bbb91](https://github.com/sebbo2002/fhem-log2db/commit/a7bbb91578cc1f58dc8667498323265b9a59877c))
+
 # [2.0.0-develop.21](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.20...v2.0.0-develop.21) (2023-03-20)
 
 # [2.0.0-develop.20](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.19...v2.0.0-develop.20) (2023-03-09)
