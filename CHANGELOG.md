@@ -1,3 +1,80 @@
+# [2.0.0-develop.22](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.21...v2.0.0-develop.22) (2023-03-31)
+
+
+### Bug Fixes
+
+* Remove `require.main` call in cli ([a7bbb91](https://github.com/sebbo2002/fhem-log2db/commit/a7bbb91578cc1f58dc8667498323265b9a59877c))
+
+# [2.0.0-develop.21](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.20...v2.0.0-develop.21) (2023-03-20)
+
+# [2.0.0-develop.20](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.19...v2.0.0-develop.20) (2023-03-09)
+
+# [2.0.0-develop.19](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.18...v2.0.0-develop.19) (2023-03-09)
+
+# [2.0.0-develop.18](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.17...v2.0.0-develop.18) (2023-02-12)
+
+
+### Bug Fixes
+
+* Fix lib import path ([d6fd100](https://github.com/sebbo2002/fhem-log2db/commit/d6fd1009d8fc0c99be2c171c5f2800b6f582f7de))
+* Fix prisma lib issue ([72da523](https://github.com/sebbo2002/fhem-log2db/commit/72da5236bb294ebdb1c8c64f1dde5a95032530b9))
+
+
+### Build System
+
+* Deprecate node.js 12 ([426588b](https://github.com/sebbo2002/fhem-log2db/commit/426588b4bb7bde2924bbc92006ca839e960872e1))
+
+
+### BREAKING CHANGES
+
+* From now on, only node.js ^14.8.0 || >=16.0.0 are supported
+
+# [2.0.0-develop.17](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.16...v2.0.0-develop.17) (2023-02-08)
+
+# [2.0.0-develop.16](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.15...v2.0.0-develop.16) (2023-02-02)
+
+# [2.0.0-develop.15](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.14...v2.0.0-develop.15) (2022-12-09)
+
+# [2.0.0-develop.14](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.13...v2.0.0-develop.14) (2022-12-04)
+
+# [2.0.0-develop.13](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.12...v2.0.0-develop.13) (2022-11-17)
+
+# [2.0.0-develop.12](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.11...v2.0.0-develop.12) (2022-11-06)
+
+# [2.0.0-develop.11](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.10...v2.0.0-develop.11) (2022-11-02)
+
+# [2.0.0-develop.10](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.9...v2.0.0-develop.10) (2022-10-25)
+
+# [2.0.0-develop.9](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.8...v2.0.0-develop.9) (2022-10-04)
+
+# [2.0.0-develop.8](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.7...v2.0.0-develop.8) (2022-09-12)
+
+# [2.0.0-develop.7](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.6...v2.0.0-develop.7) (2022-09-08)
+
+# [2.0.0-develop.6](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.5...v2.0.0-develop.6) (2022-08-31)
+
+# [2.0.0-develop.5](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.4...v2.0.0-develop.5) (2022-08-17)
+
+# [2.0.0-develop.4](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.3...v2.0.0-develop.4) (2022-08-17)
+
+# [2.0.0-develop.3](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.2...v2.0.0-develop.3) (2022-08-16)
+
+# [2.0.0-develop.2](https://github.com/sebbo2002/fhem-log2db/compare/v2.0.0-develop.1...v2.0.0-develop.2) (2022-07-25)
+
+# [2.0.0-develop.1](https://github.com/sebbo2002/fhem-log2db/compare/v1.1.3-develop.1...v2.0.0-develop.1) (2022-07-20)
+
+
+### Build System
+
+* Native ESM support ([7b86a4f](https://github.com/sebbo2002/fhem-log2db/commit/7b86a4f1187c387a3a5792e1fb72d822b04e3631))
+
+
+### BREAKING CHANGES
+
+* Only Support for node.js ^12.20.0 || >=14.13.1
+
+## [1.1.3-develop.1](https://github.com/sebbo2002/fhem-log2db/compare/v1.1.2...v1.1.3-develop.1) (2022-07-16)
+
 ## [1.1.2](https://github.com/sebbo2002/fhem-log2db/compare/v1.1.1...v1.1.2) (2022-07-16)
 
 ## [1.1.2-develop.4](https://github.com/sebbo2002/fhem-log2db/compare/v1.1.2-develop.3...v1.1.2-develop.4) (2022-07-13)

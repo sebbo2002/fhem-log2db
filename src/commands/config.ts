@@ -1,4 +1,4 @@
-import config from '../lib/config';
+import config from '../lib/config.js';
 
 export default async function configCommand() {
     console.log(`fhem-log2db Path: ${config.scriptPath}`);

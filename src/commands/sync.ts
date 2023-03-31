@@ -1,9 +1,9 @@
-import config from '../lib/config';
-import { getClient } from '../prisma';
-import runFileWalker  from '../lib/filewalker';
-import { parseLine } from '../lib/line-parser';
-import Task from '../lib/task';
-import { checkRunningProcesses } from '../lib';
+import config from '../lib/config.js';
+import { getClient } from '../prisma/index.js';
+import runFileWalker  from '../lib/filewalker.js';
+import { parseLine } from '../lib/line-parser.js';
+import Task from '../lib/task.js';
+import { checkRunningProcesses } from '../lib/index.js';
 
 async function syncPath(path: string, syncFrom?: Date): Promise<void> {
     await runFileWalker({

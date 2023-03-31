@@ -1,7 +1,7 @@
-import config from '../lib/config';
-import { getClient } from '../prisma';
-import { createTask } from '../lib/task';
-import { checkRunningProcesses } from '../lib';
+import config from '../lib/config.js';
+import { getClient } from '../prisma/index.js';
+import { createTask } from '../lib/task.js';
+import { checkRunningProcesses } from '../lib/index.js';
 
 export default async function cleanCommand() {
     const prisma = getClient();

@@ -1,11 +1,11 @@
-import setupCommand from '../commands/setup';
-import config from './config';
-import configCommand from '../commands/config';
-import prisma, { connect } from '../prisma';
-import syncCommand  from '../commands/sync';
-import cleanCommand from '../commands/clean';
-import helpCommand from '../commands/help';
-import Task, { TaskMessageLevel } from './task';
+import setupCommand from '../commands/setup.js';
+import config from './config.js';
+import configCommand from '../commands/config.js';
+import prisma, { connect } from '../prisma/index.js';
+import syncCommand  from '../commands/sync.js';
+import cleanCommand from '../commands/clean.js';
+import helpCommand from '../commands/help.js';
+import Task, { TaskMessageLevel } from './task.js';
 import { PrismaClient } from '@prisma/client';
 
 export default async function fhemLog2Db (cmd: string | undefined, args: string[]) {

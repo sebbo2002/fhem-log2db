@@ -1,8 +1,9 @@
 import { existsSync, readFileSync } from 'fs';
 import { writeFile} from 'fs/promises';
 import { join, resolve, dirname } from 'path';
-import { validateDatabaseUri } from '../prisma';
+import { validateDatabaseUri } from '../prisma/index.js';
 import { cwd } from 'process';
+import { fileURLToPath } from 'url';
 
 export interface ConfigSchema {
     path?: string;
@@ -36,7 +37,7 @@ export class Config {
     }
 
     get scriptPath(): string {
-        return resolve(__dirname, '..', '..');
+        return resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
     }
 
     get configFilePath(): string {
