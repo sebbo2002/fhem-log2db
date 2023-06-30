@@ -1,7 +1,7 @@
 {
   "author": "Sebastian Pekarek <mail@sebbo.net>",
   "bin": {
-    "fhemlog2db": "./dist/bin/cli.js"
+    "fhemlog2db": "./dist/bin/cli.cjs"
   },
   "bugs": {
     "url": "https://github.com/sebbo2002/fhem-log2db/issues"
