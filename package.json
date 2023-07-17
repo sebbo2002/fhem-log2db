@@ -12,7 +12,7 @@
     "prisma": "^4.16.1",
     "prompts": "^2.4.2",
     "targz": "^1.0.1",
-    "tempy": "^3.0.0"
+    "tempy": "^3.1.0"
   },
   "description": "Small CLI tool that parses FHEM log entries and pushes entries into a database.",
   "devDependencies": {
