@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.0...v3.0.1) (2023-07-19)
+
+
+### Bug Fixes
+
+* Fix js path of cli in package.json ([a08e795](https://github.com/sebbo2002/fhem-log2db/commit/a08e79528995daf1fec35bb8b5a7da2159c7b9e1))
+
 ## [3.0.1-develop.4](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.1-develop.3...v3.0.1-develop.4) (2023-07-19)
 
 ## [3.0.1-develop.3](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.1-develop.2...v3.0.1-develop.3) (2023-07-17)
