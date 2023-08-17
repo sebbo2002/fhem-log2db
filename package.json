@@ -7,7 +7,7 @@
     "url": "https://github.com/sebbo2002/fhem-log2db/issues"
   },
   "dependencies": {
-    "@prisma/client": "^5.0.0",
+    "@prisma/client": "^5.1.1",
     "extract-zip": "^2.0.1",
     "prisma": "^5.1.1",
     "prompts": "^2.4.2",
@@ -38,7 +38,7 @@
     "semantic-release-license": "^1.0.3",
     "source-map-support": "^0.5.21",
     "ts-node": "^10.8.2",
-    "tsup": "^7.1.0",
+    "tsup": "^7.2.0",
     "typedoc": "^0.24.8",
     "typescript": "^5.1.3"
   },
