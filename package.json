@@ -16,7 +16,7 @@
   },
   "description": "Small CLI tool that parses FHEM log entries and pushes entries into a database.",
   "devDependencies": {
-    "@qiwi/semantic-release-gh-pages-plugin": "^5.2.6",
+    "@qiwi/semantic-release-gh-pages-plugin": "^5.2.8",
     "@sebbo2002/semantic-release-docker": "^4.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "^6.0.3",
@@ -29,7 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "c8": "^8.0.1",
-    "eslint": "^8.45.0",
+    "eslint": "^8.47.0",
     "eslint-plugin-jsonc": "^2.9.0",
     "esm": "^3.2.25",
     "license-checker": "^25.0.1",
