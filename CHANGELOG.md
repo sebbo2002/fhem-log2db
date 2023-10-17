@@ -1,3 +1,39 @@
+## [3.0.3-develop.6](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.5...v3.0.3-develop.6) (2023-10-16)
+
+## [3.0.3-develop.5](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.4...v3.0.3-develop.5) (2023-09-27)
+
+## [3.0.3-develop.4](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.3...v3.0.3-develop.4) (2023-09-01)
+
+## [3.0.3-develop.3](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.2...v3.0.3-develop.3) (2023-08-31)
+
+## [3.0.3-develop.2](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.1...v3.0.3-develop.2) (2023-08-23)
+
+
+### Reverts
+
+* Revert "ci: Downgrade is-semantic-release till it's fixed" ([91c2ab5](https://github.com/sebbo2002/fhem-log2db/commit/91c2ab59d0559a060c11d07973382c465dd3345d))
+
+## [3.0.3-develop.1](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.2...v3.0.3-develop.1) (2023-08-20)
+
+## [3.0.2](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.1...v3.0.2) (2023-08-17)
+
+## [3.0.2-develop.3](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.2-develop.2...v3.0.2-develop.3) (2023-08-17)
+
+## [3.0.2-develop.2](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.2-develop.1...v3.0.2-develop.2) (2023-08-10)
+
+## [3.0.2-develop.1](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.1...v3.0.2-develop.1) (2023-07-20)
+
+## [3.0.1](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.0...v3.0.1) (2023-07-19)
+
+
+### Bug Fixes
+
+* Fix js path of cli in package.json ([a08e795](https://github.com/sebbo2002/fhem-log2db/commit/a08e79528995daf1fec35bb8b5a7da2159c7b9e1))
+
+## [3.0.1-develop.4](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.1-develop.3...v3.0.1-develop.4) (2023-07-19)
+
+## [3.0.1-develop.3](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.1-develop.2...v3.0.1-develop.3) (2023-07-17)
+
 ## [3.0.1-develop.2](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.1-develop.1...v3.0.1-develop.2) (2023-06-30)
 
 
