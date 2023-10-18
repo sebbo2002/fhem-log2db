@@ -1,3 +1,10 @@
+## [3.0.3-develop.7](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.6...v3.0.3-develop.7) (2023-10-18)
+
+
+### Reverts
+
+* Revert "ci: Run tests with node.js v18, v20 and v21" ([1b245a5](https://github.com/sebbo2002/fhem-log2db/commit/1b245a58587bc6871e8b1633beff1f1bca05970f))
+
 ## [3.0.3-develop.6](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.5...v3.0.3-develop.6) (2023-10-16)
 
 ## [3.0.3-develop.5](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.4...v3.0.3-develop.5) (2023-09-27)
