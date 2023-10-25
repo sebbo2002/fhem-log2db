@@ -1,3 +1,11 @@
+## [3.0.3](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.2...v3.0.3) (2023-10-25)
+
+
+### Reverts
+
+* Revert "ci: Run tests with node.js v18, v20 and v21" ([405853b](https://github.com/sebbo2002/fhem-log2db/commit/405853bbd7fc55eb224ff657af7dab26f9482d88))
+* Revert "ci: Downgrade is-semantic-release till it's fixed" ([91c2ab5](https://github.com/sebbo2002/fhem-log2db/commit/91c2ab59d0559a060c11d07973382c465dd3345d))
+
 ## [3.0.3-develop.7](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3-develop.6...v3.0.3-develop.7) (2023-10-18)
 
 
