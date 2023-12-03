@@ -70,7 +70,7 @@
     "build": "tsup && cp ./dist/lib/index.d.ts ./dist/lib/index.d.cts",
     "build-all": "./.github/workflows/build.sh",
     "coverage": "FHEM_LOG2DB_CONFIG=./test/config.default.json c8 mocha",
-    "develop": "ts-node ./src/bin/cli.ts",
+    "develop": "node --no-warnings --enable-source-maps --loader ts-node/esm src/bin/cli.ts",
     "license-check": "license-checker --production --summary",
     "lint": "eslint . --ext .ts,.json",
     "start": "node ./dist/bin/start.js",
