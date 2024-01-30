@@ -5,9 +5,9 @@
     "passes": 10,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-23T19:58:17.886Z",
-    "end": "2024-01-23T19:58:18.027Z",
-    "duration": 141,
+    "start": "2024-01-30T18:37:40.798Z",
+    "end": "2024-01-30T18:37:40.937Z",
+    "duration": 139,
     "testsRegistered": 10,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "07ee4f93-96ce-452a-8875-68ad3819d337",
+      "uuid": "7f08a752-5db4-486c-9116-48878e66c62e",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6c5ac929-1a6d-443a-b811-422b689d3974",
+          "uuid": "da9d2b42-7b34-4dc7-b29b-6f814bae0848",
           "title": "fhem-log2db",
           "fullFile": "/home/runner/work/fhem-log2db/fhem-log2db/test/lib/index.ts",
           "file": "/test/lib/index.ts",
@@ -38,7 +38,7 @@
               "title": "config",
               "fullTitle": "fhem-log2db config",
               "timedOut": false,
-              "duration": 21,
+              "duration": 20,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield fhemLog2Db('config', []);\n});",
               "err": {},
-              "uuid": "78089279-a960-4c4e-a8db-5e66fbb77b6a",
-              "parentUUID": "6c5ac929-1a6d-443a-b811-422b689d3974",
+              "uuid": "f46c2056-0f1d-4c0a-a8d7-f43491a9ff5a",
+              "parentUUID": "da9d2b42-7b34-4dc7-b29b-6f814bae0848",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "sync",
               "fullTitle": "fhem-log2db sync",
               "timedOut": false,
-              "duration": 49,
+              "duration": 50,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield fhemLog2Db('sync', []);\n});",
               "err": {},
-              "uuid": "613f3ceb-5631-4e3c-a819-af3ce3440bc2",
-              "parentUUID": "6c5ac929-1a6d-443a-b811-422b689d3974",
+              "uuid": "fcbbc9ed-86d9-4d80-9e1c-579c217d6f8d",
+              "parentUUID": "da9d2b42-7b34-4dc7-b29b-6f814bae0848",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "clean",
               "fullTitle": "fhem-log2db clean",
               "timedOut": false,
-              "duration": 24,
+              "duration": 21,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,8 +83,8 @@
               "context": null,
               "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield fhemLog2Db('clean', []);\n});",
               "err": {},
-              "uuid": "8766cd8e-3f71-4a40-a528-3da3aa2f3ddb",
-              "parentUUID": "6c5ac929-1a6d-443a-b811-422b689d3974",
+              "uuid": "484ee99a-159c-4c21-bc79-02cf0c0b94bd",
+              "parentUUID": "da9d2b42-7b34-4dc7-b29b-6f814bae0848",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "cron",
               "fullTitle": "fhem-log2db cron",
               "timedOut": false,
-              "duration": 30,
+              "duration": 33,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -101,8 +101,8 @@
               "context": null,
               "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield fhemLog2Db('cron', []);\n});",
               "err": {},
-              "uuid": "55548f0c-a3ca-4bb7-b99c-1f99d77fb6fc",
-              "parentUUID": "6c5ac929-1a6d-443a-b811-422b689d3974",
+              "uuid": "2e0b69a5-4304-45d5-8f5b-33723d4fd71f",
+              "parentUUID": "da9d2b42-7b34-4dc7-b29b-6f814bae0848",
               "isHook": false,
               "skipped": false
             },
@@ -119,15 +119,15 @@
               "context": null,
               "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield fhemLog2Db('-', []);\n});",
               "err": {},
-              "uuid": "40be8e0e-06ec-4c48-bbd0-9d02da15225e",
-              "parentUUID": "6c5ac929-1a6d-443a-b811-422b689d3974",
+              "uuid": "c01360a4-23aa-4a44-92e2-fbedae9efb09",
+              "parentUUID": "da9d2b42-7b34-4dc7-b29b-6f814bae0848",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [
             {
-              "uuid": "944a9ae2-f1c1-4c5b-b871-ab92eb5ee9e7",
+              "uuid": "1606d5e6-991a-4e69-9887-a10fe73c8308",
               "title": "isRunning()",
               "fullFile": "/home/runner/work/fhem-log2db/fhem-log2db/test/lib/index.ts",
               "file": "/test/lib/index.ts",
@@ -147,8 +147,8 @@
                   "context": null,
                   "code": "return __awaiter(this, void 0, void 0, function* () {\n    assert.equal(isRunning(process.pid), true);\n});",
                   "err": {},
-                  "uuid": "0a8b762a-a99f-4958-b91e-33219e5aba55",
-                  "parentUUID": "944a9ae2-f1c1-4c5b-b871-ab92eb5ee9e7",
+                  "uuid": "bc082ea8-ca15-4441-87e0-fb2598f3e1fa",
+                  "parentUUID": "1606d5e6-991a-4e69-9887-a10fe73c8308",
                   "isHook": false,
                   "skipped": false
                 },
@@ -165,16 +165,16 @@
                   "context": null,
                   "code": "return __awaiter(this, void 0, void 0, function* () {\n    assert.equal(isRunning(10000), false);\n});",
                   "err": {},
-                  "uuid": "29595770-effa-43b1-b8b4-ea80790656a1",
-                  "parentUUID": "944a9ae2-f1c1-4c5b-b871-ab92eb5ee9e7",
+                  "uuid": "d867e54b-abaf-4a1b-9a60-41925dc18bc3",
+                  "parentUUID": "1606d5e6-991a-4e69-9887-a10fe73c8308",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "0a8b762a-a99f-4958-b91e-33219e5aba55",
-                "29595770-effa-43b1-b8b4-ea80790656a1"
+                "bc082ea8-ca15-4441-87e0-fb2598f3e1fa",
+                "d867e54b-abaf-4a1b-9a60-41925dc18bc3"
               ],
               "failures": [],
               "pending": [],
@@ -186,11 +186,11 @@
             }
           ],
           "passes": [
-            "78089279-a960-4c4e-a8db-5e66fbb77b6a",
-            "613f3ceb-5631-4e3c-a819-af3ce3440bc2",
-            "8766cd8e-3f71-4a40-a528-3da3aa2f3ddb",
-            "55548f0c-a3ca-4bb7-b99c-1f99d77fb6fc",
-            "40be8e0e-06ec-4c48-bbd0-9d02da15225e"
+            "f46c2056-0f1d-4c0a-a8d7-f43491a9ff5a",
+            "fcbbc9ed-86d9-4d80-9e1c-579c217d6f8d",
+            "484ee99a-159c-4c21-bc79-02cf0c0b94bd",
+            "2e0b69a5-4304-45d5-8f5b-33723d4fd71f",
+            "c01360a4-23aa-4a44-92e2-fbedae9efb09"
           ],
           "failures": [],
           "pending": [],
@@ -201,7 +201,7 @@
           "_timeout": 30000
         },
         {
-          "uuid": "5acfbea0-a116-4ea3-a916-8cff42640d31",
+          "uuid": "39309f75-e751-46fc-b26d-9a1df24bbc1b",
           "title": "parseLine",
           "fullFile": "/home/runner/work/fhem-log2db/fhem-log2db/test/lib/line-parser.ts",
           "file": "/test/lib/line-parser.ts",
@@ -212,7 +212,7 @@
               "title": "should work",
               "fullTitle": "parseLine should work",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -221,8 +221,8 @@
               "context": null,
               "code": "return __awaiter(this, void 0, void 0, function* () {\n    const l = parseLine('2022-01-01_02:30:41 ZWave_SENSOR_MULTILEVEL_3 battery: 100');\n    assert.deepStrictEqual(l, {\n        timestamp: new Date('2022-01-01T02:30:41'),\n        device: 'ZWave_SENSOR_MULTILEVEL_3',\n        event: 'battery: 100',\n        reading: 'battery',\n        value: '100',\n        unit: null\n    });\n});",
               "err": {},
-              "uuid": "09b7551b-1341-467b-8c11-531a961be67f",
-              "parentUUID": "5acfbea0-a116-4ea3-a916-8cff42640d31",
+              "uuid": "22001547-5b3b-44fb-a0e3-39c11291bd44",
+              "parentUUID": "39309f75-e751-46fc-b26d-9a1df24bbc1b",
               "isHook": false,
               "skipped": false
             },
@@ -239,8 +239,8 @@
               "context": null,
               "code": "return __awaiter(this, void 0, void 0, function* () {\n    const l = parseLine('2022-01-01_02:30:41 ZWave_SENSOR_MULTILEVEL_3 battery: 100.0 %');\n    assert.deepStrictEqual(l, {\n        timestamp: new Date('2022-01-01T02:30:41'),\n        device: 'ZWave_SENSOR_MULTILEVEL_3',\n        event: 'battery: 100.0 %',\n        reading: 'battery',\n        value: '100.0',\n        unit: '%'\n    });\n});",
               "err": {},
-              "uuid": "56d267b8-a2b0-4cfb-959b-db78b50df8ea",
-              "parentUUID": "5acfbea0-a116-4ea3-a916-8cff42640d31",
+              "uuid": "1f257fcd-f39f-4ed5-9913-d9f3f7110314",
+              "parentUUID": "39309f75-e751-46fc-b26d-9a1df24bbc1b",
               "isHook": false,
               "skipped": false
             },
@@ -257,22 +257,22 @@
               "context": null,
               "code": "return __awaiter(this, void 0, void 0, function* () {\n    const l = parseLine('2022-01-01_02:30:41 ZWave_SENSOR_MULTILEVEL_3 time: 2022-1-23 16:29:1');\n    assert.deepStrictEqual(l, {\n        timestamp: new Date('2022-01-01T02:30:41'),\n        device: 'ZWave_SENSOR_MULTILEVEL_3',\n        event: 'time: 2022-1-23 16:29:1',\n        reading: 'time',\n        value: '2022-1-23 16:29:1',\n        unit: null\n    });\n});",
               "err": {},
-              "uuid": "13fbda4f-ba9d-4e07-9c3b-67a9437b1c32",
-              "parentUUID": "5acfbea0-a116-4ea3-a916-8cff42640d31",
+              "uuid": "b6678359-9ab0-41dc-afe5-95ae36d0e82a",
+              "parentUUID": "39309f75-e751-46fc-b26d-9a1df24bbc1b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "09b7551b-1341-467b-8c11-531a961be67f",
-            "56d267b8-a2b0-4cfb-959b-db78b50df8ea",
-            "13fbda4f-ba9d-4e07-9c3b-67a9437b1c32"
+            "22001547-5b3b-44fb-a0e3-39c11291bd44",
+            "1f257fcd-f39f-4ed5-9913-d9f3f7110314",
+            "b6678359-9ab0-41dc-afe5-95ae36d0e82a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
