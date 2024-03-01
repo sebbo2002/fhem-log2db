@@ -9,7 +9,7 @@
   "dependencies": {
     "@prisma/client": "^5.10.2",
     "extract-zip": "^2.0.1",
-    "prisma": "^5.9.1",
+    "prisma": "^5.10.2",
     "prompts": "^2.4.2",
     "targz": "^1.0.1",
     "tempy": "^3.1.0"
