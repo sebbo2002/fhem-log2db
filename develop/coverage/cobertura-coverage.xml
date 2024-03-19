@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="638" lines-covered="543" line-rate="0.851" branches-valid="132" branches-covered="96" branch-rate="0.7272" timestamp="1710335406011" complexity="0" version="0.1">
+<coverage lines-valid="638" lines-covered="543" line-rate="0.851" branches-valid="135" branches-covered="99" branch-rate="0.7333" timestamp="1710836595298" complexity="0" version="0.1">
   <sources>
     <source>/home/runner/work/fhem-log2db/fhem-log2db</source>
   </sources>
   <packages>
-    <package name="main" line-rate="0.851" branch-rate="0.7272">
+    <package name="main" line-rate="0.851" branch-rate="0.7333">
       <classes>
-        <class name="config.ts" filename="src/lib/config.ts" line-rate="0.8037000000000001" branch-rate="0.6111">
+        <class name="config.ts" filename="src/lib/config.ts" line-rate="0.8037000000000001" branch-rate="0.6666">
           <methods>
             <method name="Config" hits="1" signature="()V">
               <lines>
@@ -170,17 +170,17 @@
             <line number="82" hits="5" branch="false"/>
             <line number="83" hits="5" branch="false"/>
             <line number="84" hits="1" branch="false"/>
-            <line number="85" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="85" hits="1" branch="true" condition-coverage="100% (2/2)"/>
             <line number="86" hits="5" branch="true" condition-coverage="0% (0/1)"/>
             <line number="87" hits="0" branch="false"/>
             <line number="88" hits="0" branch="false"/>
             <line number="89" hits="5" branch="false"/>
             <line number="90" hits="1" branch="false"/>
-            <line number="91" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="91" hits="1" branch="true" condition-coverage="100% (2/2)"/>
             <line number="92" hits="5" branch="false"/>
             <line number="93" hits="5" branch="false"/>
             <line number="94" hits="1" branch="false"/>
-            <line number="95" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="95" hits="1" branch="true" condition-coverage="100% (2/2)"/>
             <line number="96" hits="5" branch="true" condition-coverage="0% (0/1)"/>
             <line number="97" hits="0" branch="false"/>
             <line number="98" hits="0" branch="false"/>
