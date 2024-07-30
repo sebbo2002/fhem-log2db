@@ -1,3 +1,19 @@
+## [3.0.12](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.11...v3.0.12) (2024-06-13)
+
+## [3.0.11](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.10...v3.0.11) (2024-05-03)
+
+## [3.0.10](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.9...v3.0.10) (2024-04-15)
+
+## [3.0.9](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.8...v3.0.9) (2024-03-26)
+
+## [3.0.8](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.7...v3.0.8) (2024-02-21)
+
+## [3.0.7](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.6...v3.0.7) (2024-01-22)
+
+## [3.0.6](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.5...v3.0.6) (2024-01-07)
+
+## [3.0.5](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.4...v3.0.5) (2023-12-13)
+
 ## [3.0.4](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.3...v3.0.4) (2023-11-23)
 
 ## [3.0.3](https://github.com/sebbo2002/fhem-log2db/compare/v3.0.2...v3.0.3) (2023-10-25)
