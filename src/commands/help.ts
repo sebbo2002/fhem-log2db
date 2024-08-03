@@ -8,6 +8,8 @@ export default async function helpCommand() {
         const pkg = JSON.parse(await readFile(join(__dirname, '..', '..', 'package.json'), 'utf8'));
         console.log(`  Version ${pkg.version}`);
     }
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     catch(error) {
         // ignore error
     }
